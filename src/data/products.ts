@@ -7,7 +7,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/3/3h/3hjq5iqud8bi.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -19,7 +19,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/t/t1/t1hggpiktior.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -31,7 +31,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/e/er/erm7w8gu7rnp.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -43,7 +43,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/e/ez/ezvu9nuoemjc.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -55,7 +55,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/i/i4/i4a6l0t4teny.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -67,7 +67,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/p/ph/php4oatvdsg9.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -79,7 +79,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/e/eq/eqnaxym5d0xe.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -91,7 +91,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: '	https://u.makeup.com.ua/m/mq/mqugiwvf9yqi.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -103,7 +103,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/m/mi/mivv6rvcnzrk.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -115,7 +115,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/r/rc/rcfsg0uqsvo3.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -127,7 +127,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/s/so/soqhrsimukk0.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -139,7 +139,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/3/3h/3hjq5iqud8bi.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -151,7 +151,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/t/t1/t1hggpiktior.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -163,7 +163,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/e/er/erm7w8gu7rnp.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -171,11 +171,11 @@ const products: Product[] = [
 	},
 	{
 		id: 15,
-		name: 'Eau de Parfum 15',
+		name: 'Eau de Parfum 1',
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/e/ez/ezvu9nuoemjc.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -183,11 +183,11 @@ const products: Product[] = [
 	},
 	{
 		id: 16,
-		name: 'Eau de Parfum 16',
+		name: 'Eau de Parfum 1',
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/i/i4/i4a6l0t4teny.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -199,7 +199,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/p/ph/php4oatvdsg9.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -211,7 +211,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/e/eq/eqnaxym5d0xe.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -223,7 +223,7 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: '	https://u.makeup.com.ua/m/mq/mqugiwvf9yqi.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',
@@ -235,7 +235,31 @@ const products: Product[] = [
 		description:
 			'A classic fragrance with a hint of floral and citrus notes.',
 		price: 50,
-		imageUrl: 'url_to_image_1.jpg',
+		imageUrl: 'https://u.makeup.com.ua/m/mi/mivv6rvcnzrk.jpg',
+		category: 'Women',
+		isNew: true,
+		classification: 'natural',
+		type: 'Floral',
+	},
+	{
+		id: 21,
+		name: 'Eau de Parfum 1',
+		description:
+			'A classic fragrance with a hint of floral and citrus notes.',
+		price: 50,
+		imageUrl: 'https://u.makeup.com.ua/r/rc/rcfsg0uqsvo3.jpg',
+		category: 'Women',
+		isNew: true,
+		classification: 'natural',
+		type: 'Floral',
+	},
+	{
+		id: 22,
+		name: 'Eau de Parfum 1',
+		description:
+			'A classic fragrance with a hint of floral and citrus notes.',
+		price: 50,
+		imageUrl: 'https://u.makeup.com.ua/s/so/soqhrsimukk0.jpg',
 		category: 'Women',
 		isNew: true,
 		classification: 'natural',

@@ -40,18 +40,3 @@
 		margin-bottom: 0.5rem;
 	}
 }
-
-.cartButton {
-	position: fixed;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	background-color: #73328d;
-	color: white;
-	padding: 1rem;
-	border: none;
-	border-radius: 0.5em 0 0 0.5em;
-	cursor: pointer;
-	z-index: 1000;
-	writing-mode: vertical-rl;
-}
