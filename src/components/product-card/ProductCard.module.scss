@@ -5,8 +5,6 @@
 	border: 1px solid #8e44ad;
 	border-radius: 8px;
 	padding: 1rem;
-	margin: 1rem;
-	width: calc(33.3333% - 2rem);
 	box-sizing: border-box;
 	transition: background-color 0.3s ease-in-out;
 	overflow: hidden;
@@ -55,6 +53,12 @@
 		animation: moveText 7s linear infinite;
 		width: auto;
 	}
+}
+
+.addToCartButton {
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
 }
 
 @keyframes moveText {

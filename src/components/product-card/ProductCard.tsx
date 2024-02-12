@@ -20,8 +20,10 @@ const ProductCard = ({ product, addToCart }: PropsType) => {
 			<div className={styles.details}>
 				<h3>{name}</h3>
 				<p>{description}</p>
-				<p className='price'>${price}</p>
-				<button onClick={addToCart}>Add to Cart</button>
+				<p className={styles.price}>${price}</p>
+				<button className={styles.addToCartButton} onClick={addToCart}>
+					Add to Cart
+				</button>
 			</div>
 		</div>
 	)

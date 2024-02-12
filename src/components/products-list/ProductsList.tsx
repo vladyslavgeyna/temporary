@@ -50,7 +50,6 @@ const ProductList = () => {
 
 	return (
 		<div>
-			<h2>Our Perfumes</h2>
 			<div className={styles.productList}>
 				{visibleItems.map(product => (
 					<ProductCard
