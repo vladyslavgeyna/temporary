@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useShallow } from 'zustand/react/shallow'
 import productsData from '../../data/products'
-import { useCartStore } from '../../store/cart'
+import { useBasketStore } from '../../store/basket'
 import Pagination from '../pagination/Pagination'
 import ProductCard from '../product-card/ProductCard'
 import styles from './ProductsList.module.scss'
@@ -9,7 +9,7 @@ import styles from './ProductsList.module.scss'
 const itemsPerPage = 15
 
 const ProductList = () => {
-	const { addCartItem } = useCartStore(
+	const { addCartItem } = useBasketStore(
 		useShallow(state => ({
 			addCartItem: state.addItem,
 		})),

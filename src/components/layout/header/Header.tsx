@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import { useShallow } from 'zustand/react/shallow'
-import { useCartStore } from '../../../store/cart'
+import { useBasketStore } from '../../../store/basket'
 import BasketIcon from '../../basket-icon/BasketIcon'
 import Container from '../../ui/container/Container'
 import styles from './Header.module.scss'
 
 const Header = () => {
-	const { cartItems } = useCartStore(
+	const { cartItems } = useBasketStore(
 		useShallow(state => ({
 			cartItems: state.items,
 		})),
