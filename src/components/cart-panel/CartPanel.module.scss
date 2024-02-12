@@ -1,0 +1,49 @@
+.cartPanel {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	background-color: #f39c12;
+	padding: 1rem;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	overflow-y: auto;
+	z-index: 1000;
+	transition: right 0.3s ease-in-out;
+
+	&.open {
+		right: 0;
+	}
+
+	h2 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		margin-bottom: 1rem;
+	}
+}
+
+.cartItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	span {
+		color: white;
+	}
+}
+
+.closeButton {
+	background-color: #3498db;
+	color: white;
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
+}

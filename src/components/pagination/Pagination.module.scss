@@ -1,0 +1,29 @@
+.pagination {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	margin-top: 2rem;
+	background-color: #2c3e50; // фон блоку пагінації
+	button {
+		background-color: #3498db;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		padding: 0.5rem 1rem;
+		margin: 0 0.5rem;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out;
+
+		&:hover {
+			background-color: #2c3e50;
+			color: #3498db;
+		}
+	}
+}
+
+.paginationItem {
+	&.active {
+		background-color: #2c3e50;
+		color: #3498db;
+	}
+}
