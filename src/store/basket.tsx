@@ -7,6 +7,7 @@ interface BasketStore {
 	addItem: (product: Product) => void
 	removeItemByProduct: (productId: number) => void
 	removeAllItems: () => void
+	updateItemQuantity: (productId: number, quantity: number) => void
 }
 
 export const useBasketStore = create<BasketStore>(set => ({
@@ -39,5 +40,16 @@ export const useBasketStore = create<BasketStore>(set => ({
 	},
 	removeAllItems: () => {
 		set({ items: [] })
+	},
+	updateItemQuantity: (productId, quantity) => {
+		set(state => {
+			const updatedItems = state.items.map(item => {
+				if (item.product.id === productId) {
+					return { ...item, quantity }
+				}
+				return item
+			})
+			return { items: updatedItems }
+		})
 	},
 }))

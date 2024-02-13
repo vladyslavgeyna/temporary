@@ -33,3 +33,37 @@
 .price {
 	font-weight: 700;
 }
+.quantity {
+	button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		font-size: 18px;
+		padding: 5px;
+		width: 30px;
+		height: 30px;
+		background-color: #e0e0e0;
+	}
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	input {
+		padding: 5px;
+		width: 40px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 18px;
+		-webkit-appearance: textfield;
+		-moz-appearance: textfield;
+		appearance: textfield;
+	}
+	input::-webkit-inner-spin-button,
+	input::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+	}
+}
+.quantityWrapper {
+	display: flex;
+	align-items: center;
+}

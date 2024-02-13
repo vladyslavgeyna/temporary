@@ -33,7 +33,6 @@ const Slider = ({ items }: PropsType) => {
 				<SwiperSlide key={index}>
 					<Link
 						to={`product/${item.productId}`}
-						target='_blank'
 						className='swiper-image-wrapper'>
 						<span
 							style={{

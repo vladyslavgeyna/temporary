@@ -1,5 +1,89 @@
 .title {
-	margin-top: 50px;
 	font-size: 40px;
 	font-weight: 700;
+}
+.topWrapper {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.filterButton {
+	transition: all 0.3s ease;
+	background-color: #6c5ce7;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+	padding: 7px;
+	border-radius: 10px;
+	border: 4px solid #6c5ce7;
+	&:hover {
+		background-color: white;
+		color: #6c5ce7;
+	}
+}
+.modalButton {
+	transition: all 0.3s ease;
+	background-color: #6c5ce7;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+	border: 3px solid #6c5ce7;
+	padding: 5px;
+	border-radius: 10px;
+	&:hover {
+		background-color: white;
+		color: #6c5ce7;
+	}
+}
+.modalHeader {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.modalFormTitle {
+	font-size: 16px;
+	font-weight: 500;
+}
+.checkboxGroup {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.modalBody {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.modalFooter {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-top: 10px;
+}
+.priceWrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+	gap: 10px;
+}
+.priceInput {
+	width: 100px;
+}
+.priceInput,
+.orderByInput {
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid #e0e0e0;
+}
+.separator {
+	height: 1px;
+	width: 100%;
+	background-color: #e0e0e0;
 }

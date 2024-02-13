@@ -26,9 +26,13 @@
 	&.active {
 		background-color: #6c5ce7;
 		color: #fff;
+		&:hover {
+			background-color: white;
+			color: #6c5ce7;
+		}
 	}
 	&:hover {
-		background-color: white;
-		color: #6c5ce7;
+		background-color: #6c5ce7;
+		color: #fff;
 	}
 }
