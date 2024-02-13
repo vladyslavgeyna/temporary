@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<Container>
-				<p>&copy; 2024 Perfume Store</p>
+				<p>&copy; {new Date().getFullYear()} Perfume Store</p>
 			</Container>
 		</footer>
 	)

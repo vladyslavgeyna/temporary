@@ -1,0 +1,28 @@
+.ribbon {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #e74c3c;
+	color: white;
+	padding: 0.5rem;
+	transform: translate(25%, 0) rotate(-45deg);
+	overflow: hidden;
+	white-space: nowrap;
+	width: 50%;
+
+	span {
+		display: inline-block;
+		transform: translateX(100%) rotate(45deg);
+		animation: moveText 7s linear infinite;
+		width: auto;
+	}
+}
+@keyframes moveText {
+	0% {
+		transform: translateX(600%); // Початкове положення справа за границею
+	}
+
+	100% {
+		transform: translateX(-200%); // Кінцеве положення зліва за границею
+	}
+}

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Product } from '../../types/product'
+import Ribbon from '../ribbon/Ribbon'
 import styles from './ProductCard.module.scss'
 
 type PropsType = {
@@ -12,11 +13,7 @@ const ProductCard = ({ product, addToCart }: PropsType) => {
 
 	return (
 		<div className={styles.productCard}>
-			{isNew && (
-				<div className={styles.ribbon}>
-					<span>NEW</span>
-				</div>
-			)}
+			{isNew && <Ribbon />}
 			<div className={styles.contentWrapper}>
 				<div className={styles.imageWrapper}>
 					<Link to={`/product/${id}`}>

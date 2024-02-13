@@ -45,6 +45,11 @@
 .swiper-wrapper {
 	height: 500px;
 }
+@media (max-width: 992px) {
+	.swiper-wrapper {
+		height: 300px;
+	}
+}
 .swiper-image-wrapper {
 	display: flex;
 	align-items: center;
