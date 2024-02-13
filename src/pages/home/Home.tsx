@@ -254,7 +254,7 @@ const Home = () => {
 								className={styles.modalButton}
 								type='button'
 								onClick={() => setIsModalActive(false)}>
-								Cancel
+								Скасувати
 							</button>
 							<button
 								className={styles.modalButton}
@@ -269,12 +269,12 @@ const Home = () => {
 									setIsModalActive(false)
 								}}
 								type='button'>
-								Reset
+								Скинути
 							</button>
 							<button
 								className={styles.modalButton}
 								type='submit'>
-								Apply
+								Застовувати
 							</button>
 						</div>
 					</form>
