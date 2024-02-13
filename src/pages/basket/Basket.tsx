@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { Bounce, toast } from 'react-toastify'
 import { useShallow } from 'zustand/react/shallow'
 import BasketList from '../../components/basket-list/BasketList'
+import RequireAuth from '../../components/hoc/RequireAuth'
 import { useBasketStore } from '../../store/basket'
 import styles from './Basket.module.scss'
 
@@ -14,10 +15,6 @@ const Basket = () => {
 			removeAllItems: state.removeAllItems,
 		})),
 	)
-
-	if (cartItems.length === 0) {
-		return <h1 className={styles.emptyBasket}>Кошик порожній</h1>
-	}
 
 	let totalPrice = cartItems.reduce((accumulator, currentItem) => {
 		return accumulator + currentItem.product.price * currentItem.quantity
@@ -40,32 +37,38 @@ const Basket = () => {
 	}
 
 	return (
-		<div className={styles.wrapper}>
-			<div className={styles.topWrapper}>
-				<h1 className={styles.title}>Кошик</h1>
-				<button
-					onClick={() => removeAllItems()}
-					className={styles.clearBasketButton}>
-					Очистити кошик
-				</button>
-			</div>
-			<div className={styles.bottomWrapper}>
-				<div className={styles.leftSide}>
-					<BasketList items={cartItems} />
-				</div>
-				<div className={styles.rightSide}>
-					<div className={styles.totalPrice}>
-						<span>Загальна сума:</span>
-						<span>${totalPrice}</span>
+		<RequireAuth>
+			{cartItems.length === 0 ? (
+				<h1 className={styles.emptyBasket}>Кошик порожній</h1>
+			) : (
+				<div className={styles.wrapper}>
+					<div className={styles.topWrapper}>
+						<h1 className={styles.title}>Кошик</h1>
+						<button
+							onClick={() => removeAllItems()}
+							className={styles.clearBasketButton}>
+							Очистити кошик
+						</button>
 					</div>
-					<button
-						onClick={() => handleMakeOrder()}
-						className={styles.makeOrderButton}>
-						Оформити замовлення
-					</button>
+					<div className={styles.bottomWrapper}>
+						<div className={styles.leftSide}>
+							<BasketList items={cartItems} />
+						</div>
+						<div className={styles.rightSide}>
+							<div className={styles.totalPrice}>
+								<span>Загальна сума:</span>
+								<span>${totalPrice}</span>
+							</div>
+							<button
+								onClick={() => handleMakeOrder()}
+								className={styles.makeOrderButton}>
+								Оформити замовлення
+							</button>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+			)}
+		</RequireAuth>
 	)
 }
 

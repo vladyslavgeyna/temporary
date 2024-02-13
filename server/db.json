@@ -1,0 +1,295 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/3/3h/3hjq5iqud8bi.jpg",
+			"category": 1,
+			"isNew": true,
+			"classification": 1,
+			"type": 1
+		},
+		{
+			"id": 2,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/t/t1/t1hggpiktior.jpg",
+			"category": 1,
+			"isNew": true,
+			"classification": 2,
+			"type": 2
+		},
+		{
+			"id": 3,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/e/er/erm7w8gu7rnp.jpg",
+			"category": 2,
+			"isNew": true,
+			"classification": 3,
+			"type": 3
+		},
+		{
+			"id": 4,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/e/ez/ezvu9nuoemjc.jpg",
+			"category": 3,
+			"isNew": false,
+			"classification": 1,
+			"type": 4
+		},
+		{
+			"id": 5,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/i/i4/i4a6l0t4teny.jpg",
+			"category": 1,
+			"isNew": false,
+			"classification": 2,
+			"type": 5
+		},
+		{
+			"id": 6,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/p/ph/php4oatvdsg9.jpg",
+			"category": 2,
+			"isNew": false,
+			"classification": 3,
+			"type": 1
+		},
+		{
+			"id": 7,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/e/eq/eqnaxym5d0xe.jpg",
+			"category": 2,
+			"isNew": false,
+			"classification": 1,
+			"type": 2
+		},
+		{
+			"id": 8,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/m/mq/mqugiwvf9yqi.jpg",
+			"category": 3,
+			"isNew": false,
+			"classification": 2,
+			"type": 3
+		},
+		{
+			"id": 9,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/m/mi/mivv6rvcnzrk.jpg",
+			"category": 3,
+			"isNew": false,
+			"classification": 3,
+			"type": 4
+		},
+		{
+			"id": 10,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/r/rc/rcfsg0uqsvo3.jpg",
+			"category": 1,
+			"isNew": false,
+			"classification": 1,
+			"type": 5
+		},
+		{
+			"id": 11,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/s/so/soqhrsimukk0.jpg",
+			"category": 1,
+			"isNew": false,
+			"classification": 2,
+			"type": 1
+		},
+		{
+			"id": 12,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/3/3h/3hjq5iqud8bi.jpg",
+			"category": 2,
+			"isNew": false,
+			"classification": 3,
+			"type": 2
+		},
+		{
+			"id": 13,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/t/t1/t1hggpiktior.jpg",
+			"category": 1,
+			"isNew": false,
+			"classification": 1,
+			"type": 3
+		},
+		{
+			"id": 14,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/e/er/erm7w8gu7rnp.jpg",
+			"category": 2,
+			"isNew": false,
+			"classification": 2,
+			"type": 4
+		},
+		{
+			"id": 15,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/e/ez/ezvu9nuoemjc.jpg",
+			"category": 2,
+			"isNew": false,
+			"classification": 3,
+			"type": 5
+		},
+		{
+			"id": 16,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/i/i4/i4a6l0t4teny.jpg",
+			"category": 3,
+			"isNew": false,
+			"classification": 1,
+			"type": 1
+		},
+		{
+			"id": 17,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/p/ph/php4oatvdsg9.jpg",
+			"category": 3,
+			"isNew": false,
+			"classification": 2,
+			"type": 2
+		},
+		{
+			"id": 18,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/e/eq/eqnaxym5d0xe.jpg",
+			"category": 3,
+			"isNew": false,
+			"classification": 3,
+			"type": 3
+		},
+		{
+			"id": 19,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/m/mq/mqugiwvf9yqi.jpg",
+			"category": 2,
+			"isNew": false,
+			"classification": 1,
+			"type": 4
+		},
+		{
+			"id": 20,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/m/mi/mivv6rvcnzrk.jpg",
+			"category": 2,
+			"isNew": false,
+			"classification": 2,
+			"type": 5
+		},
+		{
+			"id": 21,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/r/rc/rcfsg0uqsvo3.jpg",
+			"category": 1,
+			"isNew": false,
+			"classification": 3,
+			"type": 1
+		},
+		{
+			"id": 22,
+			"name": "Eau de Parfum 1",
+			"description": "A classic fragrance with a hint of floral and citrus notes.",
+			"price": 50,
+			"imageUrl": "https://u.makeup.com.ua/s/so/soqhrsimukk0.jpg",
+			"category": 1,
+			"isNew": false,
+			"classification": 1,
+			"type": 2
+		}
+	],
+	"sliderItems": [
+		{
+			"image": "https://u.makeup.com.ua/z/zy/zywa47tcnems.jpg",
+			"productId": 1
+		},
+		{
+			"image": "https://u.makeup.com.ua/5/5w/5whugqudevat.jpg",
+			"productId": 2
+		},
+		{
+			"image": "https://u.makeup.com.ua/o/op/opoxenvqthaq.jpg",
+			"productId": 4
+		},
+		{
+			"image": "https://u.makeup.com.ua/h/hk/hkoy5mtpcib1.jpg",
+			"productId": 6
+		},
+		{
+			"image": "https://u.makeup.com.ua/i/iv/ivi9hg3bovc8.jpg",
+			"productId": 5
+		},
+		{
+			"image": "https://u.makeup.com.ua/z/zy/zywa47tcnems.jpg",
+			"productId": 1
+		},
+		{
+			"image": "https://u.makeup.com.ua/5/5w/5whugqudevat.jpg",
+			"productId": 3
+		},
+		{
+			"image": "https://u.makeup.com.ua/o/op/opoxenvqthaq.jpg",
+			"productId": 4
+		},
+		{
+			"image": "https://u.makeup.com.ua/h/hk/hkoy5mtpcib1.jpg",
+			"productId": 2
+		},
+		{
+			"image": "https://u.makeup.com.ua/i/iv/ivi9hg3bovc8.jpg",
+			"productId": 1
+		}
+	],
+	"users": [
+		{
+			"id": "54bf",
+			"username": "admin",
+			"password": "admin"
+		}
+	]
+}

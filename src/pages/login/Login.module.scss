@@ -1,0 +1,45 @@
+.errorMessage {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.title {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.form {
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.formItem {
+	width: 100%;
+	input {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #e0e0e0;
+		border-radius: 10px;
+	}
+}
+.loginButton {
+	transition: all 0.3s ease;
+	border: 3px solid white;
+	border-radius: 10px;
+	padding: 7px;
+	background-color: #6c5ce7;
+	color: white;
+	font-size: 16px;
+	border: 3px solid #6c5ce7;
+	font-weight: bold;
+	&:hover {
+		background-color: white;
+		color: #6c5ce7;
+	}
+	&:disabled {
+		opacity: 0.75;
+	}
+}

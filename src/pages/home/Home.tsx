@@ -1,19 +1,57 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ProductList from '../../components/products-list/ProductsList'
 import Slider from '../../components/slider/Slider'
 import Checkbox from '../../components/ui/checkbox/Checkbox'
 import Modal from '../../components/ui/modal/Modal'
-import productsData from '../../data/products'
-import sliderItems from '../../data/slider-items'
+//import productsData from '../../data/products'
+//import sliderItems from '../../data/slider-items'
+import { useQuery } from '@tanstack/react-query'
+import axios from 'axios'
+import Loader from '../../components/ui/loader/Loader'
 import { OrderByOptions } from '../../types/enums/order-by-options'
 import { ProductCategory } from '../../types/enums/product-category'
 import { ProductClassification } from '../../types/enums/product-classification'
 import { ProductType } from '../../types/enums/product-type'
 import { Product } from '../../types/product'
+import { SlideItem } from '../../types/slide-item'
 import { getEnumAsArray } from '../../utils'
 import styles from './Home.module.scss'
 
 const Home = () => {
+	const {
+		data: productsData,
+		isLoading,
+		isError,
+		isSuccess,
+	} = useQuery({
+		queryKey: ['products'],
+		queryFn: async () => {
+			const response = await axios.get<Product[]>(
+				'http://localhost:3200/products',
+			)
+			return response.data
+		},
+		staleTime: 0,
+		retry: false,
+	})
+
+	const {
+		data: sliderItems,
+		isLoading: areItemsLoading,
+		isError: isItemsError,
+		isSuccess: IsItemsSuccess,
+	} = useQuery({
+		queryKey: ['slider-items'],
+		queryFn: async () => {
+			const response = await axios.get<SlideItem[]>(
+				'http://localhost:3200/sliderItems',
+			)
+			return response.data
+		},
+		staleTime: 0,
+		retry: false,
+	})
+
 	const [isModalActive, setIsModalActive] = useState(false)
 
 	const [selectedCategories, setSelectedCategories] = useState<number[]>([])
@@ -21,10 +59,16 @@ const Home = () => {
 	const [selectedClassifications, setSelectedClassifications] = useState<
 		number[]
 	>([])
-	const [products, setProducts] = useState(productsData)
+	const [products, setProducts] = useState<Product[]>([])
 	const [priceFrom, setPriceFrom] = useState<string | number>(0)
 	const [priceTo, setPriceTo] = useState<string | number>(0)
 	const [selectedOrderBy, setSelectedOrderBy] = useState<number>(1)
+
+	useEffect(() => {
+		if (productsData && productsData.length > 0 && products.length === 0) {
+			setProducts(productsData)
+		}
+	}, [productsData])
 
 	const orderByProducts = (products: Product[]) => {
 		switch (selectedOrderBy) {
@@ -34,12 +78,24 @@ const Home = () => {
 			case OrderByOptions['Ціною за спаданням']:
 				products.sort((a, b) => b.price - a.price)
 				break
-			case OrderByOptions['Лише нові']:
+			case OrderByOptions['Лише нові товари']:
 				products = products.filter(product => product.isNew)
 				break
 			default:
 				break
 		}
+	}
+
+	if (isLoading || areItemsLoading) {
+		return <Loader />
+	}
+
+	if (isError || isItemsError || !isSuccess || !IsItemsSuccess) {
+		return (
+			<h1 className={styles.title}>
+				Помилка... Спробуйте ще раз пізніше...
+			</h1>
+		)
 	}
 
 	const filterProducts = () => {

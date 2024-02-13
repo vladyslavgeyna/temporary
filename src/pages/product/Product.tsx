@@ -4,12 +4,23 @@ import { useShallow } from 'zustand/react/shallow'
 import Characteristics from '../../components/characteristics/Characteristics'
 import productsData from '../../data/products'
 import { useBasketStore } from '../../store/basket'
+import { useUserStore } from '../../store/user'
 import styles from './Product.module.scss'
 
 const Product = () => {
 	const { addItem } = useBasketStore(
 		useShallow(state => ({
 			addItem: state.addItem,
+		})),
+	)
+
+	const { isCheckingAuthFinished, isAuthenticated, isLoading } = useUserStore(
+		useShallow(state => ({
+			isCheckingAuthFinished: state.isCheckingAuthFinished,
+			isAuthenticated: state.isAuthenticated,
+			isLoading: state.isLoading,
+			logout: state.logout,
+			user: state.user,
 		})),
 	)
 
@@ -56,11 +67,15 @@ const Product = () => {
 						<p className={styles.contentTitle}>Опис:</p>
 						<p className={styles.text}>{product.description}</p>
 						<div>
-							<button
-								className={styles.AddToBasketButton}
-								onClick={() => handleAddToBasket()}>
-								Додати в кошик
-							</button>
+							{!isLoading &&
+								isCheckingAuthFinished &&
+								isAuthenticated && (
+									<button
+										className={styles.AddToBasketButton}
+										onClick={() => handleAddToBasket()}>
+										Додати в кошик
+									</button>
+								)}
 						</div>
 					</div>
 					<div>
