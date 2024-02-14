@@ -4,7 +4,13 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
-import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'
+import {
+	A11y,
+	Autoplay,
+	Navigation,
+	Pagination,
+	Scrollbar,
+} from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.css'
 import { SlideItem } from '../../types/slide-item'
@@ -18,11 +24,16 @@ const Slider = ({ items }: PropsType) => {
 	return (
 		<Swiper
 			className='swiper-wrapper'
-			modules={[Navigation, Pagination, Scrollbar, A11y]}
+			modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
 			spaceBetween={50}
 			centeredSlides={true}
 			slidesPerView={1}
-			loop
+			loop={true}
+			autoplay={{
+				delay: 2000,
+				disableOnInteraction: false,
+				pauseOnMouseEnter: true,
+			}}
 			navigation={{
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',

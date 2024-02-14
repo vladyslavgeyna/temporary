@@ -7,6 +7,7 @@ import Modal from '../../components/ui/modal/Modal'
 //import sliderItems from '../../data/slider-items'
 import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
+import { API_URL } from '../../../config'
 import Loader from '../../components/ui/loader/Loader'
 import { OrderByOptions } from '../../types/enums/order-by-options'
 import { ProductCategory } from '../../types/enums/product-category'
@@ -26,9 +27,7 @@ const Home = () => {
 	} = useQuery({
 		queryKey: ['products'],
 		queryFn: async () => {
-			const response = await axios.get<Product[]>(
-				'http://localhost:3200/products',
-			)
+			const response = await axios.get<Product[]>(`${API_URL}/products`)
 			return response.data
 		},
 		staleTime: 0,
@@ -44,7 +43,7 @@ const Home = () => {
 		queryKey: ['slider-items'],
 		queryFn: async () => {
 			const response = await axios.get<SlideItem[]>(
-				'http://localhost:3200/sliderItems',
+				`${API_URL}/sliderItems`,
 			)
 			return response.data
 		},

@@ -11,7 +11,6 @@ const Login = () => {
 	const [password, setPassword] = useState('')
 	const [isValid, setIsValid] = useState(false)
 	const navigate = useNavigate()
-	const [isSuccess, setIsSuccess] = useState(false)
 
 	useEffect(() => {
 		if (!username || !password) {

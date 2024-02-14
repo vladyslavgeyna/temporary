@@ -2,12 +2,37 @@ import { useParams } from 'react-router-dom'
 import { Bounce, toast } from 'react-toastify'
 import { useShallow } from 'zustand/react/shallow'
 import Characteristics from '../../components/characteristics/Characteristics'
-import productsData from '../../data/products'
+//import productsData from '../../data/products'
+import { useQuery } from '@tanstack/react-query'
+import axios, { AxiosError } from 'axios'
+import { API_URL } from '../../../config'
+import Loader from '../../components/ui/loader/Loader'
 import { useBasketStore } from '../../store/basket'
 import { useUserStore } from '../../store/user'
+import { Product as ProductType } from '../../types/product'
 import styles from './Product.module.scss'
 
 const Product = () => {
+	const productId = Number(useParams().id)
+
+	const {
+		data: product,
+		isLoading: isProductLoading,
+		isError,
+		isSuccess,
+		error: productError,
+	} = useQuery({
+		queryKey: ['products', productId],
+		queryFn: async () => {
+			const response = await axios.get<ProductType>(
+				`${API_URL}/products/${productId}`,
+			)
+			return response.data
+		},
+		staleTime: 0,
+		retry: false,
+	})
+
 	const { addItem } = useBasketStore(
 		useShallow(state => ({
 			addItem: state.addItem,
@@ -24,12 +49,19 @@ const Product = () => {
 		})),
 	)
 
-	const productId = Number(useParams().id)
+	if (isProductLoading) {
+		return <Loader />
+	}
 
-	const product = productsData.find(product => product.id === productId)
-
-	if (!product) {
-		return <h1 className={styles.notFound}>Товар не знайдено</h1>
+	if (isError || !isSuccess) {
+		if ((productError as AxiosError).response?.status === 404) {
+			return <h1 className={styles.notFound}>Товар не знайдено</h1>
+		}
+		return (
+			<h1 className={styles.error}>
+				Помилка... Спробуйте ще раз пізніше...
+			</h1>
+		)
 	}
 
 	const handleAddToBasket = () => {
